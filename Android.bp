@@ -28,7 +28,16 @@ android_library {
         "framework-wifi-vendor-hide-access-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.java",
+           "DerpZone/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.derp.caf"],
+
+    resource_dirs: ["res",
+		    "res-derp",
+                    "DerpZone/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -65,10 +74,9 @@ android_library {
         "telephony-ext",
     ],
 
-    resource_dirs: [
-        "res-derp",
-        "res",
-    ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

@@ -242,5 +242,7 @@ public class Settings extends SettingsActivity {
      * Activity for MediaControlsSettings
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
+    // DerpZone Additions.
+    public static class DerpZoneSettingsActivity extends SettingsActivity {}
 
 }
