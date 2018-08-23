@@ -200,7 +200,7 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
             }
         }
         preference.setTitle(getTitle(simSlot));
-        preference.setSummary(getSummary(simSlot));
+        //preference.setSummary(getSummary(simSlot));
     }
 
     private CharSequence getTitleForGsmPhone(int simSlot) {
