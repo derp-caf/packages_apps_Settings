@@ -482,4 +482,10 @@
     <string name="location_mode_battery_saving_title">Battery saving mode</string>
     <string name="location_mode_battery_saving_summary">Use only Wi\u2011Fi, Bluetooth, or mobile networks to determine location (less accurate)</string>
 
+    <!-- Switch styles -->
+    <string name="switch_style_title">Switch appearance</string>
+    <string name="switch_default">Default</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_oneplus">OnePlus</string>
+
 </resources>
