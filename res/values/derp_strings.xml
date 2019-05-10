@@ -11,9 +11,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
      <!-- DerpZone -->
     <string name="derpzone_title">DerpZone</string>
-    <string name="derpzone_summary">Derp your device here:P</string>
+    <string name="derpzone_summary">Derp Your Device Here</string>
 
     <!-- Scramble pin -->
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
