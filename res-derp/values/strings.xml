@@ -31,4 +31,7 @@
 
     <string name="caf_version">CAF revision</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp">Battery temperature</string>
+
 </resources>
