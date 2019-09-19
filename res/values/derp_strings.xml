@@ -18,4 +18,8 @@
     <!-- Derp version -->
     <string name="derp_version">Derp version</string>
     <string name="caf_version">CAF revision</string>
+
+    <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
+    <string name="suggestion_button_close">Close</string>
+
 </resources>
