@@ -121,4 +121,7 @@
     <string name="transparent_lockscreen_notification_title">Transparent notifications</string>
     <string name="transparent_lockscreen_notification_summary">Enable lockscreen notifications with semi-transparent backgrounds</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
 </resources>
