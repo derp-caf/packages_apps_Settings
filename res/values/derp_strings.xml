@@ -19,6 +19,10 @@
     <string name="derp_version">Derp version</string>
     <string name="caf_version">CAF revision</string>
 
+     <!-- DerpZone -->
+    <string name="derpzone_title">DerpZone</string>
+    <string name="derpzone_summary">Derp Your Device Here</string>
+
     <!-- Strings for suggestion card's close button [CHAR LIMIT=20] -->
     <string name="suggestion_button_close">Close</string>
 

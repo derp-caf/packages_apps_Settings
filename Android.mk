@@ -21,6 +21,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../DerpZone/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx-constraintlayout_constraintlayout \
@@ -54,6 +55,12 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     zxing-core-1.7
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+
+LOCAL_AAPT_FLAGS := --auto-add-overlay \
+    --extra-packages com.derp.caf
+
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    packages/apps/DerpZone/res
 
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled

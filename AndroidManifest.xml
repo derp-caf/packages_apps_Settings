@@ -3326,5 +3326,21 @@
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- DerpZone additions -->
+        <activity android:name=".Settings$DerpZoneActivity"
+                  android:label="@string/derpzone_title"
+                  android:icon="@drawable/ic_homepage_derpzone"
+                  android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="69">
+                <action android:name="android.intent.action.MAIN" />    
+                <category android:name="com.android.settings.SHORTCUT" />
+ 	    </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.derp.caf.DerpZone"/>
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/derpzone_summary"/>
+        </activity>
     </application>
 </manifest>
+

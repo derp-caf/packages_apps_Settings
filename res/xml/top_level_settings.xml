@@ -21,6 +21,14 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_derpzone_settings"
+        android:title="@string/derpzone_title"
+        android:summary="@string/derpzone_summary"
+        android:icon="@drawable/ic_homepage_derpzone"
+        android:order="-130"
+        android:fragment="com.derp.caf.DerpZone"/>
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
