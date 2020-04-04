@@ -145,6 +145,12 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
     private CharSequence getSummary(int simSlot) {
         final int phoneType = getPhoneType(simSlot);
         if (mContext.getResources().getBoolean(R.bool.configShowDeviceSensitiveInfo)) {
+        if (Utils.isSupportCTPA(mContext)) {
+            // only can obtain the MEID by slot 0
+            if (PHONE_TYPE_CDMA == phoneType) {
+                simSlot = 0;
+            }
+        }
             return phoneType == PHONE_TYPE_CDMA ? mTelephonyManager.getMeid(simSlot)
                     : mTelephonyManager.getImei(simSlot);
         }
@@ -193,12 +199,6 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
     }
 
     private void updatePreference(Preference preference, int simSlot) {
-        if (Utils.isSupportCTPA(mContext)) {
-            int phoneType = mTelephonyManager.getCurrentPhoneTypeForSlot(simSlot);
-            if (PHONE_TYPE_CDMA == phoneType) {
-                simSlot = 0;
-            }
-        }
         preference.setTitle(getTitle(simSlot));
         //preference.setSummary(getSummary(simSlot));
     }
@@ -220,6 +220,9 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
     }
 
     private int getPhoneType(int slotIndex) {
+        if (Utils.isSupportCTPA(mContext)) {
+            return mTelephonyManager.getCurrentPhoneTypeForSlot(slotIndex);
+        }
         SubscriptionInfo subInfo = SubscriptionManager.from(mContext)
             .getActiveSubscriptionInfoForSimSlotIndex(slotIndex);
         return mTelephonyManager.getCurrentPhoneType(subInfo != null ? subInfo.getSubscriptionId()
