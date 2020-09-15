@@ -468,9 +468,13 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new CameraLaserSensorPreferenceController(context));
         controllers.add(new WifiDisplayCertificationPreferenceController(context));
         controllers.add(new WifiCoverageExtendPreferenceController(context));
+        controllers.add(new SoftApOcvPreferenceController(context));
+        controllers.add(new SoftApBeaconProtectionPreferenceController(context));
         controllers.add(new WifiVerboseLoggingPreferenceController(context));
         controllers.add(new WifiScanThrottlingPreferenceController(context));
         controllers.add(new WifiEnhancedMacRandomizationPreferenceController(context));
+        controllers.add(new WifiWhitelistRoamingPreferenceController(context));
+        controllers.add(new WifiNewNetworkAutoConnectionPreferenceController(context));
         controllers.add(new MobileDataAlwaysOnPreferenceController(context));
         controllers.add(new TetheringHardwareAccelPreferenceController(context));
         controllers.add(new BluetoothDeviceNoNamePreferenceController(context));

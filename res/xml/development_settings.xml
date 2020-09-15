@@ -283,6 +283,16 @@
             android:summary="@string/wifi_coverage_extend_summary" />
 
         <SwitchPreference
+            android:key="softap_ocv"
+            android:title="@string/softap_ocv"
+            android:summary="@string/softap_ocv_summary" />
+
+        <SwitchPreference
+            android:key="softap_beacon_protection"
+            android:title="@string/softap_beacon_protection"
+            android:summary="@string/softap_beacon_protection_summary" />
+
+        <SwitchPreference
             android:key="wifi_verbose_logging"
             android:title="@string/wifi_verbose_logging"
             android:summary="@string/wifi_verbose_logging_summary" />
@@ -291,6 +301,16 @@
             android:key="wifi_scan_throttling"
             android:title="@string/wifi_scan_throttling"
             android:summary="@string/wifi_scan_throttling_summary" />
+
+        <SwitchPreference
+            android:key="wifi_whitelist_roaming"
+            android:title="@string/wifi_whitelist_roaming"
+            android:summary="@string/wifi_whitelist_roaming_summary" />
+
+        <SwitchPreference
+            android:key="wifi_new_network_auto_connection"
+            android:title="@string/wifi_new_network_auto_connection"
+            android:summary="@string/wifi_new_network_auto_connection_summary" />
 
         <SwitchPreference
             android:key="wifi_enhanced_mac_randomization"
