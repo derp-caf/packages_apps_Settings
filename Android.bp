@@ -64,6 +64,11 @@ android_library {
         "app-compat-annotations",
         "telephony-ext",
     ],
+
+    resource_dirs: [
+        "res-derp",
+        "res",
+    ],
 }
 
 platform_compat_config {
@@ -83,7 +88,6 @@ android_app {
         "settings-platform-compat-config",
     ],
     static_libs: ["Settings-core"],
-    resource_dirs: [],
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
