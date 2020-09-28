@@ -29,4 +29,6 @@
     <!--Derp-CAF Version-->
     <string name="derp_version">Derp-CAF Version</string>
 
+    <string name="caf_version">CAF revision</string>
+
 </resources>
