@@ -35,14 +35,25 @@
         android:key="derp_version"
         android:title="@string/derp_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        android:selectable="false"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.DerpVersionDetailPreferenceController"/>
+
+    <!-- CAF version -->
+    <Preference
+        android:key="caf_version"
+        android:title="@string/caf_version"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CAFVersionDetailPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
-        settings:enableCopying="true"
+        android:selectable="false"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
@@ -50,16 +61,10 @@
         android:key="module_version"
         android:title="@string/module_version"
         android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
+        android:selectable="false"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
-    <!-- CAF version -->
-    <Preference
-        android:key="caf_version"
-        android:title="@string/caf_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.CAFVersionDetailPreferenceController"/>
 
     <!-- Baseband -->
     <Preference
@@ -67,7 +72,7 @@
         android:title="@string/baseband_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
     <!-- Kernel -->
@@ -76,10 +81,10 @@
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
-    <!-- Build -->
+    <!-- Build
     <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
@@ -87,5 +92,5 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
-
+	-->
 </PreferenceScreen>
