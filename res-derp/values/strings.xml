@@ -124,4 +124,9 @@
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 
+    <!-- Navbar length -->
+    <string name="navbar_length">Gesture bar length</string> 
+    <string name="short_label">Short</string>
+    <string name="long_label">Long</string>
+
 </resources>
