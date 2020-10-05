@@ -124,6 +124,10 @@
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
 
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Haptic feedback</string>
+    <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+
     <!-- Navbar length -->
     <string name="navbar_length">Gesture bar length</string> 
     <string name="hidden_label">Hidden</string>

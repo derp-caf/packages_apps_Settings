@@ -46,6 +46,12 @@
 
     </PreferenceCategory>
 
+    <com.derp.caf.preferences.SystemSettingSwitchPreference
+        android:key="back_gesture_haptic"
+        android:title="@string/back_gesture_haptic_title"
+        android:summary="@string/back_gesture_haptic_summary"
+        android:defaultValue="false" />
+
     <com.android.settings.widget.LabeledSeekBarPreference
         android:key="gesture_navbar_length"
         android:title="@string/navbar_length"
