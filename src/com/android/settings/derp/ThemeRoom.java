@@ -236,7 +236,7 @@ public class ThemeRoom extends DashboardFragment implements
     private void setupThemeSwitchPref() {
         mThemeSwitch = (ListPreference) findPreference(PREF_THEME_SWITCH);
         mThemeSwitch.setOnPreferenceChangeListener(this);
-        if (DerpUtils.isThemeEnabled("com.android.theme.xtendedclear.system")) {
+        if (DerpUtils.isThemeEnabled("com.android.theme.clearlyderp.system")) {
             mThemeSwitch.setValue("9");
         } else if (DerpUtils.isThemeEnabled("com.android.theme.darkgrey.system")) {
             mThemeSwitch.setValue("7");
