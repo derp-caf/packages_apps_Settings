@@ -11642,6 +11642,8 @@
     <string name="network_recommended">\u0020(recommended)</string>
     <!-- Text for Network 5g [CHAR LIMIT=NONE] -->
     <string name="network_5G" translatable="false">5G</string>
+    <!-- Text for Network 5g lte[CHAR LIMIT=NONE] -->
+    <string name="network_5G_lte" translatable="false">5G</string>
     <!-- Text for Network lte [CHAR LIMIT=NONE] -->
     <string name="network_lte_pure" translatable="false">LTE</string>
     <!-- Text for Network 4g [CHAR LIMIT=NONE] -->
@@ -12261,4 +12263,12 @@
     <string name="media_controls_no_players">No players available</string>
     <!-- Keywords for the media controls setting [CHAR LIMIT=NONE]-->
     <string name="keywords_media_controls">media</string>
+    <!-- Title of selecting NR mode in developer options settings [CHAR LIMIT=NONE]-->
+    <string name="prefer_5G_nr_mode_title">Prefer 5G NR Mode</string>
+    <!-- Summary of selecting NR mode in developer options settings [CHAR LIMIT=NONE]-->
+    <string name="prefer_5G_nr_mode_summary">Enable 5G if you want to select 5G mode</string>
+    <!-- String for NSA, NSA, NSA+SA [CHAR LIMIT=NONE]-->
+    <string name="nr_nsa_sa">NSA + SA</string>
+    <string name="nr_nsa">NSA</string>
+    <string name="nr_sa">SA</string>
 </resources>
